@@ -58,8 +58,7 @@ class HammingReceiver {
         return Message(copy)
     }
 
-    private fun toInt(bits: BitArray): Int
-    {
+    private fun toInt(bits: BitArray): Int {
         var result = 0
         var multiplier = 1
         bits.toBooleanArray().forEach { value ->
